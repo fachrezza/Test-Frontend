@@ -170,6 +170,31 @@ export default function FilterPage() {
 
         {/* Hasil dari filter */}
         <main className="flex-1 flex items-center justify-center relative">
+            {/* Breadcrumb */}
+  <div className="breadcrumb absolute top-8 left-12 text-sm text-gray-500">
+    <span className="text-gray-400">Wilayah</span>
+
+    {selectedProvince && (
+      <>
+        <span className="mx-2">/</span>
+        <span>{selectedProvince.name}</span>
+      </>
+    )}
+
+    {selectedRegency && (
+      <>
+        <span className="mx-2">/</span>
+        <span>{selectedRegency.name}</span>
+      </>
+    )}
+
+    {selectedDistrict && (
+      <>
+        <span className="mx-2">/</span>
+        <span>{selectedDistrict.name}</span>
+      </>
+    )}
+  </div>
         <div className="text-center">
             {selectedProvince && (
             <>
