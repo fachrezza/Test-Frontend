@@ -85,7 +85,7 @@ export default function FilterPage() {
 
     return (
     <div className="h-screen flex bg-[#f3f4f6]">
-        {/* SIDEBAR */}
+        {/* sidebar */}
         <aside className="w-80 bg-white border-r px-8 py-8 flex flex-col">
         <h1 className="text-lg font-semibold mb-12">
             Frontend Assessment
@@ -96,7 +96,7 @@ export default function FilterPage() {
             FILTER WILAYAH
             </p>
 
-            {/* PROVINSI */}
+            {/* provinsi */}
             <div className="mb-6">
             <label className="text-xs font-semibold text-gray-500 block mb-2">
                 PROVINSI
@@ -116,7 +116,7 @@ export default function FilterPage() {
             </select>
             </div>
 
-            {/* KOTA */}
+            {/* kota */}
             <div className="mb-6">
             <label className="text-xs font-semibold text-gray-500 block mb-2">
                 KOTA/KABUPATEN
@@ -137,7 +137,7 @@ export default function FilterPage() {
             </select>
             </div>
 
-            {/* KECAMATAN */}
+            {/* kecamatan */}
             <div className="mb-10">
             <label className="text-xs font-semibold text-gray-500 block mb-2">
                 KECAMATAN
@@ -159,7 +159,7 @@ export default function FilterPage() {
             </div>
         </div>
 
-        {/* RESET DI BAWAH */}
+        {/* tombol reset */}
         <button
             onClick={handleReset}
             className="mt-auto w-full border-2 border-blue-600 text-blue-600 py-3 rounded-xl font-semibold hover:bg-blue-50 transition"
@@ -168,7 +168,7 @@ export default function FilterPage() {
         </button>
         </aside>
 
-        {/* CONTENT */}
+        {/* Hasil dari filter */}
         <main className="flex-1 flex items-center justify-center relative">
         <div className="text-center">
             {selectedProvince && (
